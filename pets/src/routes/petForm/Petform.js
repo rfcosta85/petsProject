@@ -2,6 +2,8 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { postPet } from '../../services/pets'
 
+import '../petForm/petform.scss'
+
 function Petform() {
   let navigate = useNavigate()
 
