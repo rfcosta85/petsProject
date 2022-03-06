@@ -3,7 +3,7 @@ import client from '../providers/client'
 export const getPets = () => {
   const api_code = process.env.REACT_APP_API_CODE
 
-  const response = client.get(`/pets/${api_code}`)
+  const response = client.get(`/pets/${'01ihgws'}`)
 
   return response
 }
@@ -11,7 +11,7 @@ export const getPets = () => {
 export const postPet = (data) => {
   const api_code = process.env.REACT_APP_API_CODE
 
-  const response = client.post(`/pets/${api_code}`, data)
+  const response = client.post(`/pets/${'01ihgws'}`, data)
 
   return response
 }

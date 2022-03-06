@@ -1,0 +1,32 @@
+.c-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+
+  margin: 40px 0;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: solid rgb(224, 208, 59);
+    padding: 20px;
+
+    background-color: rgba(214, 144, 14, 0.836);
+
+    &--card-image {
+      border: solid rgb(224, 208, 59);
+      padding: 1px;
+    }
+  }
+
+  &__card-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border: solid rgb(224, 208, 59);
+  }
+}

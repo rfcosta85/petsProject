@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { getPets } from '../../services/pets'
 
+import '../pets/pets.scss'
+
 function Pets() {
   const [PetsList, setPetsList] = useState([])
   useEffect(() => {
@@ -17,22 +19,21 @@ function Pets() {
       {PetsList !== [] ? (
         PetsList.map(
           ({ id, name, breed, age, species, gender, url, adopted }) => (
-            <div key={id} className="card">
-              <img src={url} alt={breed} className="card-image" />
-              <div className="card-info">
+            <div key={id} className="c-main__card">
+              <img src={url} alt={breed} className="c-main__card--card-image" />
+              <div className="c-main__card-info">
                 <h3>
                   {name} - {age} ano(s)
                 </h3>
                 <p>
                   {species} - {gender}
                 </p>
-                {adopted ? <p>Adotado</p> : null}
               </div>
             </div>
           )
         )
       ) : (
-        <h2>Carregando...</h2>
+        <h2>Loading...</h2>
       )}
     </main>
   )
