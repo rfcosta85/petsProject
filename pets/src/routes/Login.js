@@ -1,7 +1,7 @@
 import { useAuth } from '../context/auth-context'
 import { useLocation, useNavigate } from 'react-router-dom'
 
-function Login() {
+export default function Login() {
   const auth = useAuth()
   const location = useLocation()
   const navigate = useNavigate()
@@ -37,5 +37,3 @@ function Login() {
     </div>
   )
 }
-
-export default Login

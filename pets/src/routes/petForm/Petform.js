@@ -59,7 +59,7 @@ function Petform() {
           <input
             type="url"
             name="image"
-            placeholder="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2.wp.com%2Fpetcaramelo.com%2Fwp-content%2Fuploads%2F2018%2F12%2Fpitbull.jpg%3Fssl%3D1&f=1&nofb=1"
+            placeholder="insira um link com a imagem do seu pet"
           />
           <button>Create</button>
         </form>
