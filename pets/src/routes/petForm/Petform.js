@@ -23,7 +23,7 @@ function Petform() {
   return (
     <main className="c-main__container">
       <div className="c-main__container--title">
-        <h1>Create Pet</h1>
+        <h1>Cadastrando PET</h1>
       </div>
       <div className="c-main__div-form">
         <form onSubmit={handleSubmitForm} className="c-main__div-form--form">
