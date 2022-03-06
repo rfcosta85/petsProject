@@ -25,39 +25,39 @@ function Petform() {
   return (
     <main className="c-main__container">
       <div className="c-main__container--title">
-        <h1>Cadastrando PET</h1>
+        <h1 className="title">Cadastro PetLovers</h1>
       </div>
       <div className="c-main__div-form">
         <form onSubmit={handleSubmitForm} className="c-main__div-form--form">
-          <label htmlFor="name">Nome</label>
+          <label htmlFor="name">Nome:</label>
           <input
             type="text"
             name="name"
             placeholder="Digite o nome do seu Pet"
           />
-          <label htmlFor="breed">Raça</label>
+          <label htmlFor="breed">Raça:</label>
           <input
             type="text"
             name="breed"
             placeholder="Digite a raça do seu Pet"
           />
-          <label htmlFor="age">Idade</label>
+          <label htmlFor="age">Idade:</label>
           <input
             type="number"
             name="age"
             placeholder="Digite o ano do seu Pet"
           />
-          <label htmlFor="species">Espécie</label>
+          <label htmlFor="species">Espécie:</label>
           <select name="species">
             <option value="cachorro">Cachorro</option>
             <option value="gato">Gato</option>
           </select>
-          <label htmlFor="gender">Gênero</label>
+          <label htmlFor="gender">Gênero:</label>
           <select name="gender">
             <option value="macho">Macho</option>
             <option value="femea">Fêmea</option>
           </select>
-          <label htmlFor="image">Imagem</label>
+          <label htmlFor="image">Imagem:</label>
           <input
             type="url"
             name="image"
