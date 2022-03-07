@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom'
+
+import Pets from './routes/pets/Pets'
+import Login from './routes/Login'
+import Petform from './routes/petForm/Petform'
+
+import Layout from './components/layout/Layout'
+
+import { AuthProvider, RequireAuth } from './context/auth-context'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AuthProvider>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Pets />} />
+          <Route
+            path="/create"
+            element={
+              <RequireAuth>
+                <Petform />
+              </RequireAuth>
+            }
+          />
+          <Route path="/login" element={<Login />} />
+        </Route>
+      </Routes>
+    </AuthProvider>
+  )
 }
 
-export default App;
+export default App

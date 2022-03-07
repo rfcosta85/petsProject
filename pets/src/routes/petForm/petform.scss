@@ -1,0 +1,44 @@
+.c-main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 50px;
+
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313dc;
+    color: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .c-main__div-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    &--form {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
+
+label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+input {
+  height: 30px;
+}
